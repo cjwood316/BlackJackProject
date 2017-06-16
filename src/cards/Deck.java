@@ -1,6 +1,7 @@
 package cards;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Deck {
@@ -13,5 +14,16 @@ public class Deck {
 				deck.add(new Card(r, s));
 			}
 		}
+
+	}
+
+	public void shuffleDeck(List<Card> deck) {
+		Collections.shuffle(deck);
+
+	}
+
+	public Card dealCardsFromDeck(List<Card> deck) {
+		return deck.remove(0);
+		
 	}
 }
